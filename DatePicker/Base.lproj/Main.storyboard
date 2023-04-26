@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ppg-hp-t7j">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="7yV-wp-5Bv">
+            <objects>
+                <viewController id="Ppg-hp-t7j" customClass="ViewController" customModule="DatePicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v8X-tF-o68">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="ZRW-Nv-eGf">
+                                <rect key="frame" x="42" y="321" width="331" height="269"/>
+                            </datePicker>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="T8T-V2-yUm"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZRW-Nv-eGf" firstAttribute="centerX" secondItem="T8T-V2-yUm" secondAttribute="centerX" id="eFw-Ve-hwG"/>
+                            <constraint firstItem="ZRW-Nv-eGf" firstAttribute="width" secondItem="v8X-tF-o68" secondAttribute="width" multiplier="0.8" id="iuF-aS-EDA"/>
+                            <constraint firstItem="ZRW-Nv-eGf" firstAttribute="centerY" secondItem="T8T-V2-yUm" secondAttribute="centerY" id="lsM-wd-biL"/>
+                            <constraint firstItem="ZRW-Nv-eGf" firstAttribute="height" secondItem="v8X-tF-o68" secondAttribute="height" multiplier="0.3" id="tm7-km-F62"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="time" destination="ZRW-Nv-eGf" id="sWm-im-QzO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ldB-Nr-G1D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="47.544642857142854"/>
+        </scene>
+    </scenes>
+</document>
